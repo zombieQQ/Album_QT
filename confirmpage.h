@@ -12,7 +12,7 @@ class ConfirmPage : public QWizardPage
     Q_OBJECT
 
 public:
-    explicit ConfirmPage(QWidget *parent = 0);
+    explicit ConfirmPage(QWidget *parent = nullptr);
     ~ConfirmPage();
 
 private:

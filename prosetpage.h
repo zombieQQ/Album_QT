@@ -12,14 +12,12 @@ class ProSetPage : public QWizardPage
     Q_OBJECT
 
 public:
-    explicit ProSetPage(QWidget *parent = 0);
+    explicit ProSetPage(QWidget *parent = nullptr);
     ~ProSetPage();
-    void GetProSetting(QString& name,QString& path);
-
-
+    void GetProSettings(QString& name, QString& path);
 protected:
-    virtual bool isComplete() const;
-
+     virtual bool isComplete() const;
+     virtual bool validatePage();
 private slots:
     void on_pushButton_clicked();
 

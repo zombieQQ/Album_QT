@@ -1,21 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>ProTree</class>
- <widget class="QDialog" name="ProTree">
+ <widget class="QWidget" name="ProTree">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>713</width>
-    <height>587</height>
+    <width>378</width>
+    <height>363</height>
    </rect>
   </property>
-  <property name="windowTitle">
-   <string>Dialog</string>
+  <property name="minimumSize">
+   <size>
+    <width>378</width>
+    <height>0</height>
+   </size>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_3">
+  <property name="maximumSize">
+   <size>
+    <width>378</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_4">
    <item>
-    <layout class="QVBoxLayout" name="verticalLayout_2" stretch="1,20">
+    <layout class="QVBoxLayout" name="verticalLayout" stretch="1,20">
      <item>
       <widget class="QLabel" name="label_pro">
        <property name="text">
@@ -25,6 +40,12 @@
      </item>
      <item>
       <widget class="ProTreeWidget" name="treeWidget">
+       <property name="headerHidden">
+        <bool>true</bool>
+       </property>
+       <attribute name="headerVisible">
+        <bool>false</bool>
+       </attribute>
        <column>
         <property name="text">
          <string notr="true">1</string>
@@ -40,7 +61,7 @@
   <customwidget>
    <class>ProTreeWidget</class>
    <extends>QTreeWidget</extends>
-   <header>protreewidget.h</header>
+   <header location="global">protreewidget.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

@@ -6,15 +6,22 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>512</width>
+    <height>310</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Wizard</string>
   </property>
-  <widget class="ProSetPage" name="wizardPage1"/>
-  <widget class="ConfirmPage" name="wizardPage2"/>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="ProSetPage" name="wizardPage1">
+   <layout class="QGridLayout" name="gridLayout_2"/>
+  </widget>
+  <widget class="ConfirmPage" name="wizardPage2">
+   <layout class="QVBoxLayout" name="verticalLayout_2"/>
+  </widget>
  </widget>
  <customwidgets>
   <customwidget>

@@ -1,5 +1,7 @@
 #include "wizard.h"
 #include "ui_wizard.h"
+#include <QDebug>
+#include <QMessageBox>
 
 Wizard::Wizard(QWidget *parent) :
     QWizard(parent),
@@ -19,8 +21,13 @@ void Wizard::done(int result)
         return QWizard::done(result);
     }
 
-    QString name, path ;
-    ui->wizardPage1->GetProSetting(name,path);
-    emit SigProSettings(name,path);
+    QString name, path;
+    ui->wizardPage1->GetProSettings(name, path);
+    emit SigProSettings(name, path);
     QWizard::done(result);
 }
+
+
+
+
+
